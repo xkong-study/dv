@@ -10,12 +10,12 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-<p style="margin-left: 60px">Shows all the stations in Ireland and the running track of the railway</p>
+<p style="margin-left: 60px;color:#FFF">Shows all the stations in Ireland and the running track of the railway</p>
 <div id="chart-container" style="position: relative;height: 90vh; width:85vh;overflow: hidden;"></div>
 <div id="main" style="float:right;margin-top:-720px;margin-left:-250px;height: 50vh; width:730px;overflow: hidden;"></div>
 <div id="mainBelow" style="float:right;margin-top:-350px;margin-left:-250px;height: 50vh; width:730px;overflow: hidden;"></div>
 <script type="text/javascript">
-
+  document.body.style.backgroundColor='black';
   if (window.XMLHttpRequest)
   {
     xmlhttp=new XMLHttpRequest();
@@ -228,6 +228,7 @@
       text: 'All trains serving a given station within a 90-minute period and the total time the trains travel in Ireland',
       textStyle: {
         fontSize: 13,
+        color:'#FFF'
       },
       left:'center'
     },
@@ -277,6 +278,7 @@
       text: 'Minutes before the train gets this place',
       textStyle: {
         fontSize: 13,
+        color:'#FFF'
       },
       left:'center'
     },
